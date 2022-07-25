@@ -1,12 +1,9 @@
-import os
-import sys
-import requests
 import numpy
 import B_Mind
 import time
 import matplotlib.pyplot as plt
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation,LSTM,Flatten,GRU
+from keras.layers import Dense, Dropout, Flatten,GRU
 import keras.models
 
 
@@ -38,8 +35,8 @@ def Boleslaw(
 
 	NormData = B_Mind.AddNormData(Data)
 
-	Labels, Data = B_Mind.AddIndicatorsAndHist(NormData,histReq)
-	train_x, train_y, test_x,test_y = B_Mind.SelectData(Data,Labels,testSet)
+	Labels, Data = B_Mind.AddIndicatorsAndHist(NormData, histReq)
+	train_x, train_y, test_x,test_y = B_Mind.SelectData(Data, Labels, testSet)
 	i,j,k = train_x.shape
 	# numpy.savetxt("data/x_ful.csv", train_x[100,:,:], delimiter=",")
 

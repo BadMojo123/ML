@@ -3,11 +3,11 @@ import MieszkoI
 # !!!!!!!!!!!!!!initilalizer
 
 testSet = 0.9
-l1_size = [120]
-l2_size = [120]
-l3_size = [120]
-l4_size = 120
-l5_size = 120
+l1_size = [220]
+l2_size = [220]
+l3_size = [220]
+l4_size = 220
+l5_size = 220
 l1_activation = ['selu']
 l2_activation = ['selu']
 l3_activation = 'selu'
@@ -47,7 +47,6 @@ for l1a in l1_activation:
                                 metrics=metrics,
                                 epochs=epochs,
                                 validation_split=validation_split,
-                                batch_size=batch_size,
-                                instrument='EURUSD15M'
-                                # modelName = "klony/Mieszko1529505566.546631.h5"
+                                batch_size=batch_size
+                                # modelName = "klony/Mieszko1529329088.96341.h5"
                             )
