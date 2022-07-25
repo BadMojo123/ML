@@ -124,8 +124,7 @@ class OandaEnv:
 	@nb.jit
 	def Next(self):
 		done = 0
-# TODO max batch <= długości gry. W trakcie batcha nie można przerwać gry
-# TODO uczenie się każdy dzień po koleji
+
 
 		lastTFI = self.TimeFramesLen-1
 

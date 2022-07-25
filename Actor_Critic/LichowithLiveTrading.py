@@ -260,7 +260,6 @@ class Licho:
 			batchreward[li] = reward
 
 			# if done:
-			# 	# TODO - cut matrix 
 			# 	self.reset_env()
 			# 	print("Env Restarted")
 
