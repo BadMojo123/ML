@@ -15,7 +15,7 @@ def sigmoid(x):
     X_std = (x - EURUSDMIN) / (EURUSDMAX - EURUSDMIN)
 
 
-return X_std
+    return X_std
 
 
 def LoadFile(FILE_NAME):
