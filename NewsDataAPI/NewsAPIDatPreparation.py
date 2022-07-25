@@ -1,9 +1,7 @@
-import requests
 # url = ('https://newsapi.org/v2/top-headlines?'+
 # 	'country=us&'+
 # 	'apiKey=66954171c19248dc8097abd04cfc8a4a')
 from newsapi import NewsApiClient
-
 
 newsapi = NewsApiClient(api_key='66954171c19248dc8097abd04cfc8a4a')
 all_articles = newsapi.get_everything(q='NYSE',
@@ -14,4 +12,4 @@ all_articles = newsapi.get_everything(q='NYSE',
                                       page=2)
 
 # response = requests.get(url)
-print(all_articles )
+print(all_articles)
